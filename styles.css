@@ -5,17 +5,18 @@ body {
 .flex-center {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .card-container {
 	border: 5px solid black;
 	border-radius: 2px;
-	width: 600px;
-	height: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.card-container:first-child {
+	margin-right: 5px;
 }
 
 .card-container > h2 {
@@ -46,4 +47,14 @@ body {
 
 .card-footer > a:visited {
 	color: gray;
+}
+
+#min-container {
+	width: min(250px, 500px);
+	background-color: red;
+}
+
+#max-container {
+	width: max(500px, 250px);
+	background-color: blue;
 }
